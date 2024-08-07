@@ -1,0 +1,8 @@
+var input = msg.payload;
+input = input.trim();
+var values = input.split(',');
+values = values.map(function (value) {
+    return parseFloat(value.trim());
+});
+msg.payload = values[1]; 
+return msg;
